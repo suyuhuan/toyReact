@@ -83,7 +83,7 @@ npm install webpack-dev-server --save-dev
 const path = require("path");
 module.exports = {
   entry: {
-    main: path.resolve(\_\_\_\_\_\_dirname, "./src/main.js"),
+    main: path.resolve(__dirname, "./src1/main.js"),
   },
   mode: "development",
   module: {
@@ -181,9 +181,8 @@ class MyComponent extends Component {
   render() {
     return (
       <div>
-                       <span>hello</span>
-                      <div>{this.children}</div>
-                    
+        <span>hello</span>
+        <div>{this.children}</div>      
       </div>
     );
   }
